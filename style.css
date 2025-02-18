@@ -1,9 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Manrope:wght@200..800&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box;   
+    font-family: var(--font-fam-2); 
 }
+
+:root {
+    --font-fam-1: Funnel Display;
+    --font-fam-2: Manrope;
+  }
+
 body{
     height: 100%;
     width: 100%;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    background-image: url('uni-back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+}
+.navbar{
+    background-color: aliceblue;
+    height: 7.5vh;
+    width: 70%;
+    border: 0px solid #000;
+    border-radius: 0.5vw;
+    margin: 1vh 1.5vw;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 3vh;
+}
+.navbar a{
+    font-size: 2.5vh;
+    margin: 0 1.5vw;
+    color: black;
+    text-decoration: none;
+}
+.hero{
+    /* background-image: url('uni-back.jpg'); */
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
 }
